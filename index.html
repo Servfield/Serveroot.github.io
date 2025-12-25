@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>我的导航</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Ubuntu, 'Helvetica Neue', sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      color: #222;
+    }
+    header {
+      padding: 3rem 2rem;
+      text-align: center;
+      color: #fff;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      opacity: 0.9;
+      font-size: 1.1rem;
+    }
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    }
+    .card h3 {
+      margin-bottom: 0.5rem;
+    }
+    .card a {
+      color: #667eea;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.2rem;
+    }
+    .card a:hover {
+      text-decoration: underline;
+    }
+    .desc {
+      font-size: 0.95rem;
+      color: #666;
+      margin-top: 0.5rem;
+      line-height: 1.5;
+    }
+    .category {
+      margin-bottom: 2.5rem;
+    }
+    .category-title {
+      color: #fff;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>我的常用导航</h1>
+    <p>快速访问常用网站和工具</p>
+  </header>
+
+  <main>
+    <section class="category">
+      <h2 class="category-title">开发工具</h2>
+      <div class="grid">
+        <div class="card">
+          <h3><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></h3>
+          <div class="desc">全球最大的代码托管与协作平台，支持版本控制和团队协作。</div>
+        </div>
+        <div class="card">
+          <h3><a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a></h3>
+          <div class="desc">超快的静态网站生成器，使用 Go 语言编写，构建速度极快。</div>
+        </div>
+        <div class="card">
+          <h3><a href="https://code.visualstudio.com" target="_blank" rel="noopener">VS Code</a></h3>
+          <div class="desc">微软出品的免费代码编辑器，支持丰富的扩展插件。</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="category">
+      <h2 class="category-title">云服务</h2>
+      <div class="grid">
+        <div class="card">
+          <h3><a href="https://www.netlify.com" target="_blank" rel="noopener">Netlify</a></h3>
+          <div class="desc">现代化的网站托管平台，支持持续部署和无服务器函数。</div>
+        </div>
+        <div class="card">
+          <h3><a href="https://vercel.com" target="_blank" rel="noopener">Vercel</a></h3>
+          <div class="desc">前端部署平台，Next.js 的官方托管服务商。</div>
+        </div>
+        <div class="card">
+          <h3><a href="https://cloudflare.com" target="_blank" rel="noopener">Cloudflare</a></h3>
+          <div class="desc">全球 CDN 和网站安全服务提供商。</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="category">
+      <h2 class="category-title">学习资源</h2>
+      <div class="grid">
+        <div class="card">
+          <h3><a href="https://developer.mozilla.org" target="_blank" rel="noopener">MDN Web Docs</a></h3>
+          <div class="desc">Mozilla 提供的 Web 开发权威文档和教程。</div>
+        </div>
+        <div class="card">
+          <h3><a href="https://stackoverflow.com" target="_blank" rel="noopener">Stack Overflow</a></h3>
+          <div class="desc">全球最大的开发者问答社区。</div>
+        </div>
+        <div class="card">
+          <h3><a href="https://www.w3schools.com" target="_blank" rel="noopener">W3Schools</a></h3>
+          <div class="desc">Web 开发入门教程和参考手册。</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 我的导航 | 托管于 Netlify</p>
+  </footer>
+</body>
+</html>
